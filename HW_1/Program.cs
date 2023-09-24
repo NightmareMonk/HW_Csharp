@@ -2,28 +2,28 @@
 
 class Program
 {
-     static void Main()
+    static void Main()
     {
         Console.Write("Введите первое число: ");
-int num1 = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
-int num2 = int.Parse(Console.ReadLine());
-if (num1 > num2)
+int b = int.Parse(Console.ReadLine());
+if (a > b)
 {
-    Console.WriteLine(num1 + " большее");
-    Console.WriteLine(num2 + " меньшее");
+    Console.WriteLine(a + " большее");
+    Console.Write(b + " меньшее");
 }
 
-else if (num1 == num2)
+else if (a == b)
 
 {
-    Console.WriteLine(num1 + " равно " + num2);
+    Console.WriteLine(a + " равно " + b);
 }
 else
 {
-    Console.Write(num2 + " большее");
-    Console.Write(num1 + " меньшее");
+    Console.WriteLine(b + " большее");
+    Console.WriteLine(a + " меньшее");
 }
 
     }
-}   
+}
